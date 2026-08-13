@@ -1,0 +1,26 @@
+[project]
+name = "breast-cancer-transcriptomics"
+version = "0.1.0"
+description = "Reproducible computational analysis of breast cancer transcriptomic subtypes, conserved biological programs, and immunotherapy-related immune signatures across independent cohorts."
+readme = "README.md"
+requires-python = ">=3.14"
+
+authors = [
+    { name = "Dr Joseline Joseph", email = "maryjoselinejoseph@gmail.com" },
+]
+
+
+dependencies = [
+    "gseapy>=1.3.1",
+    "jupyter>=1.1.1",
+    "lifelines>=0.30.0",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "scikit-learn>=1.9.0",
+    "scipy>=1.18.0",
+    "seaborn>=0.13.2",
+    "shap>=0.52.0",
+    "statsmodels>=0.14.6",
+    "xgboost>=3.4.0",
+]
