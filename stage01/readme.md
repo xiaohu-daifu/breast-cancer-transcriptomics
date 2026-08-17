@@ -22,7 +22,9 @@ Acquire, clean, and explore breast cancer transcriptomic data from independent p
 
 **Platform:** Affymetrix Human Genome U133 Plus 2.0 Array
 
-**Study design:** Primary invasive breast cancer samples collected at surgery before treatment. The cohort contains:
+**Experiment type:** Expression profiling by array
+
+**Study design:** Primary invasive breast cancer samples collected at surgery before treatment. The original cohort contains:
 
 - 41 triple-negative/basal samples
 - 30 HER2 samples
@@ -30,8 +32,6 @@ Acquire, clean, and explore breast cancer transcriptomic data from independent p
 - 30 Luminal B samples
 - 11 normal tissue samples
 - 14 cell lines
-
-**Experiment type:** Expression profiling by array
 
 ### Original study design
 
@@ -100,17 +100,28 @@ The cleaned metadata are stored in:
 
 ## 6. Expression Data
 
-The next step is to extract the expression matrix from the GEO Series Matrix file and verify that its sample identifiers correspond exactly to the 130 samples in the cleaned metadata.
+Extracted the expression matrix from the GEO Series Matrix file and restricted it to the 130 samples in the analysis cohort.
 
-Planned checks include:
+The resulting matrix contains:
 
-- Number of genes/probes
-- Number of samples
-- Missing expression values
-- Sample ID consistency
-- Expression distributions
-- Potential outliers
-- Potential batch effects
+- **29,873 unique probes**
+- **130 breast cancer samples**
+- **0 missing expression values**
+
+The expression matrix contains Affymetrix probe IDs in `ID_REF` and sample-level expression values in the remaining columns.
+
+The processed expression matrix is stored in:
+
+`data/GSE45827_expression.csv`
+
+### Expression/metadata validation
+
+Verified that:
+
+- All 130 metadata samples are present in the expression matrix
+- Expression matrix columns match the metadata sample IDs exactly
+- Probe IDs are unique
+- No expression values are missing
 
 ---
 
@@ -123,6 +134,7 @@ Planned checks include:
 - Principal component analysis (PCA)
 - Sample clustering
 - Subtype-level expression patterns
+- Investigation of potential batch effects and other technical variation
 
 ### Key observations
 
@@ -143,8 +155,11 @@ Planned checks include:
 - [x] Clean metadata
 - [x] Define analysis cohort
 - [x] Save cleaned metadata
-- [ ] Extract expression matrix
-- [ ] Validate expression/metadata sample matching
+- [x] Extract expression matrix
+- [x] Validate expression/metadata sample matching
+- [x] Check missing expression values
+- [x] Check probe ID uniqueness
 - [ ] Perform expression QC
 - [ ] Perform PCA
 - [ ] Investigate potential batch effects
+- [ ] Complete exploratory analysis
