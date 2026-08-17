@@ -15,3 +15,7 @@ wheels/
 .idea/
 
 readme.template.md
+
+# Large expression datasets
+data/GSE45827_series_matrix.txt.gz
+data/GSE45827_expression.csv
