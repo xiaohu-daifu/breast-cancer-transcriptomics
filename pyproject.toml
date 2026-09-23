@@ -24,3 +24,9 @@ dependencies = [
     "statsmodels>=0.14.6",
     "xgboost>=3.4.0",
 ]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.3",
+]
