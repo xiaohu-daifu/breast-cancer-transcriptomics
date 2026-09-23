@@ -1,0 +1,7 @@
+Contrast,Total probes,FDR < 0.05,FDR < 0.05 & |log2FC| >= 1,Upregulated,Downregulated
+Basal vs Luminal A,28086,16959,5969,2711,3258
+Basal vs Luminal B,28086,14414,4208,2003,2205
+Basal vs HER2,28086,9926,2451,1086,1365
+Luminal B vs Luminal A,28086,7159,1671,659,1012
+HER2 vs Luminal A,28086,11345,3243,1382,1861
+HER2 vs Luminal B,28086,4649,1110,525,585

@@ -1,21 +1,80 @@
+# ============================================================
 # Python-generated files
+# ============================================================
+
 __pycache__/
 *.py[oc]
+*.so
+
 build/
 dist/
 wheels/
-*.egg-info
+*.egg-info/
 
+# ============================================================
 # Virtual environments
-.venv
+# ============================================================
 
+.venv/
+venv/
+env/
 
-# project
+# ============================================================
+# Project / environment
+# ============================================================
+
 .env
 .idea/
-
+.vscode/
+.ipynb_checkpoints/
 readme.template.md
 
+# ============================================================
 # Large expression datasets
+# ============================================================
+
 data/GSE45827_series_matrix.txt.gz
 data/GSE45827_expression.csv
+
+# Large generated DE tables
+stage02/results/DE_Basal_vs_Her2.csv
+stage02/results/DE_Basal_vs_Her2_annotated.csv
+stage02/results/DE_Basal_vs_LuminalA.csv
+stage02/results/DE_Basal_vs_LuminalA_annotated.csv
+stage02/results/DE_Basal_vs_LuminalB.csv
+stage02/results/DE_Basal_vs_LuminalB_annotated.csv
+stage02/results/DE_Her2_vs_LuminalA.csv
+stage02/results/DE_Her2_vs_LuminalA_annotated.csv
+stage02/results/DE_Her2_vs_LuminalB.csv
+stage02/results/DE_Her2_vs_LuminalB_annotated.csv
+stage02/results/DE_LuminalB_vs_LuminalA.csv
+stage02/results/DE_LuminalB_vs_LuminalA_annotated.csv
+# ============================================================
+# R / renv
+# ============================================================
+
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+.Rprofile
+
+renv/library/
+renv/staging/
+renv/cache/
+
+
+# ============================================================
+# Temporary / generated files
+# ============================================================
+
+*.log
+*.tmp
+*.bak
+
+# ============================================================
+# OS files
+# ============================================================
+
+.DS_Store
+Thumbs.db

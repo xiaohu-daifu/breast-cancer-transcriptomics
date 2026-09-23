@@ -47,7 +47,7 @@ plt.savefig(
     bbox_inches="tight",
 )
 plt.show()
-plt.close
+plt.close()
 
 
 
@@ -68,7 +68,7 @@ plt.savefig(
     bbox_inches="tight",
 )
 plt.show()
-plt.close
+plt.close()
 
 
 X = expression_values.T
@@ -138,4 +138,4 @@ plt.savefig(
     bbox_inches="tight",
 )
 plt.show()
-plt.close
+plt.close()
