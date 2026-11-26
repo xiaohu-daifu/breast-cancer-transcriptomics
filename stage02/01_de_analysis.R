@@ -92,7 +92,7 @@ metadata$subtype <- factor(
   levels = c(
     "Luminal A",
     "Luminal B",
-    "Her2",
+    "HER2",
     "Basal"
   )
 )
@@ -126,7 +126,7 @@ design <- model.matrix(
 colnames(design) <- c(
   "Luminal_A",
   "Luminal_B",
-  "Her2",
+  "HER2",
   "Basal"
 )
 
@@ -149,10 +149,10 @@ fit <- lmFit(
 contrasts <- makeContrasts(
   Basal_vs_LuminalA = Basal - Luminal_A,
   LuminalB_vs_LuminalA = Luminal_B - Luminal_A,
-  Her2_vs_LuminalA = Her2 - Luminal_A,
+  HER2_vs_LuminalA = HER2 - Luminal_A,
   Basal_vs_LuminalB = Basal - Luminal_B,
-  Her2_vs_LuminalB = Her2 - Luminal_B,
-  Basal_vs_Her2 = Basal - Her2,
+  HER2_vs_LuminalB = HER2 - Luminal_B,
+  Basal_vs_HER2 = Basal - HER2,
   levels = design
 )
 
