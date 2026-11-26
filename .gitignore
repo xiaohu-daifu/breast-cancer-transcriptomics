@@ -35,6 +35,7 @@ readme.template.md
 
 data/GSE45827_series_matrix.txt.gz
 data/GSE45827_expression.csv
+data/GSE45827_RAW.tar
 
 # Large generated DE tables
 stage02/results/DE_Basal_vs_Her2.csv
