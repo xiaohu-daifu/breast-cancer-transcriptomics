@@ -14,7 +14,11 @@ results_dir <- "stage02/results"
 
 contrast_files <- list.files(
   results_dir,
+<<<<<<< HEAD
   pattern = "^DE_(Basal_vs_HER2|Basal_vs_LuminalA|Basal_vs_LuminalB|HER2_vs_LuminalA|HER2_vs_LuminalB|LuminalB_vs_LuminalA)\\.csv$",
+=======
+  pattern = "^DE_(Basal_vs_Her2|Basal_vs_LuminalA|Basal_vs_LuminalB|Her2_vs_LuminalA|Her2_vs_LuminalB|LuminalB_vs_LuminalA)\\.csv$",
+>>>>>>> main
   full.names = TRUE
 )
 
