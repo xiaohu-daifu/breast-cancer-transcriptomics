@@ -1,0 +1,120 @@
+Subtype,Library,Term,Gene_count,Gene_set_size,Gene_ratio,Adjusted_P_value
+Basal,MSigDB_Hallmark_2020,E2F Targets,134,200,0.67,3.46828082345432e-85
+Basal,MSigDB_Hallmark_2020,G2-M Checkpoint,113,200,0.565,2.9175873731621644e-60
+Basal,MSigDB_Hallmark_2020,Interferon Gamma Response,75,200,0.375,5.903791365533212e-25
+Basal,MSigDB_Hallmark_2020,mTORC1 Signaling,74,200,0.37,2.528524221130038e-24
+Basal,MSigDB_Hallmark_2020,Myc Targets V1,64,200,0.32,2.205989253290344e-17
+Basal,MSigDB_Hallmark_2020,Interferon Alpha Response,36,97,0.371,3.3099591692453688e-12
+Basal,MSigDB_Hallmark_2020,Mitotic Spindle,54,199,0.271,1.3543304679128292e-11
+Basal,MSigDB_Hallmark_2020,Myc Targets V2,25,58,0.431,2.0702863286397983e-10
+Basal,MSigDB_Hallmark_2020,Inflammatory Response,50,200,0.25,1.5132791603853811e-09
+Basal,MSigDB_Hallmark_2020,Allograft Rejection,50,200,0.25,1.5132791603853811e-09
+Basal,KEGG_2021_Human,Cell cycle,52,124,0.419,1.2106455475222305e-18
+Basal,KEGG_2021_Human,DNA replication,21,36,0.583,1.1016185760775744e-10
+Basal,KEGG_2021_Human,Bladder cancer,16,41,0.39,6.336316070128023e-05
+Basal,KEGG_2021_Human,Epstein-Barr virus infection,42,202,0.208,0.0001319378035371
+Basal,KEGG_2021_Human,Cellular senescence,35,156,0.224,0.0001319378035371
+Basal,KEGG_2021_Human,p53 signaling pathway,21,73,0.288,0.0002045542250321
+Basal,KEGG_2021_Human,Human T-cell leukemia virus 1 infection,42,219,0.192,0.0006727126580293
+Basal,KEGG_2021_Human,Chemokine signaling pathway,38,192,0.198,0.0007065992114677
+Basal,KEGG_2021_Human,Rheumatoid arthritis,23,93,0.247,0.0007625214310018
+Basal,KEGG_2021_Human,Pathways in cancer,79,531,0.149,0.0029718099559986
+Basal,GO_Biological_Process_2021,microtubule cytoskeleton organization involved in mitosis (GO:1902850),56,128,0.438,4.250370841926432e-20
+Basal,GO_Biological_Process_2021,mitotic spindle organization (GO:0007052),59,157,0.376,1.4445706122781248e-17
+Basal,GO_Biological_Process_2021,DNA metabolic process (GO:0006259),81,277,0.292,5.760718431118416e-17
+Basal,GO_Biological_Process_2021,mitotic sister chromatid segregation (GO:0000070),45,102,0.441,1.7584392253093318e-16
+Basal,GO_Biological_Process_2021,DNA replication (GO:0006260),45,108,0.417,2.2000838154570334e-15
+Basal,GO_Biological_Process_2021,DNA-dependent DNA replication (GO:0006261),47,129,0.364,1.878145885400398e-13
+Basal,GO_Biological_Process_2021,mitotic cell cycle phase transition (GO:0044772),58,209,0.278,6.57097448979544e-11
+Basal,GO_Biological_Process_2021,centromere complex assembly (GO:0034508),22,37,0.595,6.57097448979544e-11
+Basal,GO_Biological_Process_2021,DNA replication initiation (GO:0006270),21,38,0.553,1.536472164817562e-09
+Basal,GO_Biological_Process_2021,G1/S transition of mitotic cell cycle (GO:0000082),32,85,0.376,2.338904823519961e-09
+Luminal A,MSigDB_Hallmark_2020,Estrogen Response Early,101,200,0.505,1.4269934688770814e-45
+Luminal A,MSigDB_Hallmark_2020,Epithelial Mesenchymal Transition,91,200,0.455,1.4115438296015476e-36
+Luminal A,MSigDB_Hallmark_2020,Estrogen Response Late,82,200,0.41,3.768220107678349e-29
+Luminal A,MSigDB_Hallmark_2020,UV Response Dn,53,144,0.368,1.5582671148250934e-16
+Luminal A,MSigDB_Hallmark_2020,Myogenesis,47,200,0.235,3.438262255922852e-07
+Luminal A,MSigDB_Hallmark_2020,Coagulation,36,138,0.261,7.016140231335886e-07
+Luminal A,MSigDB_Hallmark_2020,Apoptosis,39,161,0.242,1.5044504419056263e-06
+Luminal A,MSigDB_Hallmark_2020,Androgen Response,27,100,0.27,9.471908149808577e-06
+Luminal A,MSigDB_Hallmark_2020,Hypoxia,43,200,0.215,9.471908149808577e-06
+Luminal A,MSigDB_Hallmark_2020,TNF-alpha Signaling via NF-kB,40,200,0.2,0.0001178996044117
+Luminal A,KEGG_2021_Human,Focal adhesion,49,201,0.244,8.403818252490628e-07
+Luminal A,KEGG_2021_Human,ECM-receptor interaction,29,88,0.33,8.403818252490628e-07
+Luminal A,KEGG_2021_Human,PI3K-Akt signaling pathway,69,354,0.195,9.74510218089821e-06
+Luminal A,KEGG_2021_Human,Circadian rhythm,13,31,0.419,0.0003395968050849
+Luminal A,KEGG_2021_Human,Hedgehog signaling pathway,16,56,0.286,0.0063049870870407
+Luminal A,KEGG_2021_Human,TGF-beta signaling pathway,22,94,0.234,0.0080086612605195
+Luminal A,KEGG_2021_Human,Protein digestion and absorption,23,103,0.223,0.0103736082583911
+Luminal A,KEGG_2021_Human,Pathways in cancer,79,531,0.149,0.0144187534498496
+Luminal A,KEGG_2021_Human,Proteoglycans in cancer,37,205,0.18,0.0144187534498496
+Luminal A,KEGG_2021_Human,Pancreatic secretion,22,102,0.216,0.0161991217189724
+Luminal A,GO_Biological_Process_2021,extracellular structure organization (GO:0043062),70,216,0.324,8.93877316062141e-16
+Luminal A,GO_Biological_Process_2021,external encapsulating structure organization (GO:0045229),70,217,0.323,8.93877316062141e-16
+Luminal A,GO_Biological_Process_2021,extracellular matrix organization (GO:0030198),84,300,0.28,3.769271460369612e-15
+Luminal A,GO_Biological_Process_2021,negative regulation of cell differentiation (GO:0045596),49,191,0.257,9.017970938399043e-07
+Luminal A,GO_Biological_Process_2021,collagen fibril organization (GO:0030199),30,89,0.337,1.4545403964292716e-06
+Luminal A,GO_Biological_Process_2021,negative regulation of cell migration (GO:0030336),40,144,0.278,1.7840390465463224e-06
+Luminal A,GO_Biological_Process_2021,negative regulation of signal transduction (GO:0009968),59,267,0.221,5.032341900156376e-06
+Luminal A,GO_Biological_Process_2021,negative regulation of cell motility (GO:2000146),33,114,0.289,1.0863722166282945e-05
+Luminal A,GO_Biological_Process_2021,regulation of cell migration (GO:0030334),78,408,0.191,1.6708998575955804e-05
+Luminal A,GO_Biological_Process_2021,supramolecular fiber organization (GO:0097435),69,351,0.197,3.020526109120336e-05
+HER2,MSigDB_Hallmark_2020,E2F Targets,84,200,0.42,1.9853084403547047e-53
+HER2,MSigDB_Hallmark_2020,G2-M Checkpoint,79,200,0.395,4.95162478103145e-48
+HER2,MSigDB_Hallmark_2020,mTORC1 Signaling,64,200,0.32,1.4562265547714522e-32
+HER2,MSigDB_Hallmark_2020,Interferon Gamma Response,35,200,0.175,1.5996858220763971e-09
+HER2,MSigDB_Hallmark_2020,Glycolysis,35,200,0.175,1.5996858220763971e-09
+HER2,MSigDB_Hallmark_2020,Mitotic Spindle,33,199,0.166,1.848655645454236e-08
+HER2,MSigDB_Hallmark_2020,Cholesterol Homeostasis,17,74,0.23,1.0478159050106978e-06
+HER2,MSigDB_Hallmark_2020,Hypoxia,28,200,0.14,6.589430641981103e-06
+HER2,MSigDB_Hallmark_2020,Estrogen Response Late,28,200,0.14,6.589430641981103e-06
+HER2,MSigDB_Hallmark_2020,Myc Targets V1,28,200,0.14,6.589430641981103e-06
+HER2,KEGG_2021_Human,Cell cycle,29,124,0.234,1.2115418548928243e-09
+HER2,KEGG_2021_Human,DNA replication,13,36,0.361,1.8385360728315336e-06
+HER2,KEGG_2021_Human,Steroid biosynthesis,8,20,0.4,0.0003436609906087
+HER2,KEGG_2021_Human,HIF-1 signaling pathway,18,109,0.165,0.0007883281183361
+HER2,KEGG_2021_Human,p53 signaling pathway,14,73,0.192,0.0010547126392074
+HER2,KEGG_2021_Human,Glutathione metabolism,11,57,0.193,0.0065376173631634
+HER2,KEGG_2021_Human,Central carbon metabolism in cancer,12,70,0.171,0.0091570034151664
+HER2,KEGG_2021_Human,Oocyte meiosis,17,129,0.132,0.012270696959525
+HER2,KEGG_2021_Human,Mucin type O-glycan biosynthesis,8,36,0.222,0.0132408805913469
+HER2,KEGG_2021_Human,Pyrimidine metabolism,10,56,0.179,0.0152084729321346
+HER2,GO_Biological_Process_2021,microtubule cytoskeleton organization involved in mitosis (GO:1902850),43,128,0.336,1.7590703608088174e-20
+HER2,GO_Biological_Process_2021,mitotic spindle organization (GO:0007052),45,157,0.287,1.23503171909575e-18
+HER2,GO_Biological_Process_2021,mitotic sister chromatid segregation (GO:0000070),33,102,0.324,4.176012658639849e-15
+HER2,GO_Biological_Process_2021,DNA-dependent DNA replication (GO:0006261),33,129,0.256,7.366060793059218e-12
+HER2,GO_Biological_Process_2021,DNA replication (GO:0006260),28,108,0.259,4.468769332715593e-10
+HER2,GO_Biological_Process_2021,DNA metabolic process (GO:0006259),45,277,0.162,3.4301614024585087e-09
+HER2,GO_Biological_Process_2021,centromere complex assembly (GO:0034508),16,37,0.432,4.907268698367081e-09
+HER2,GO_Biological_Process_2021,sister chromatid segregation (GO:0000819),15,34,0.441,1.3536915207251077e-08
+HER2,GO_Biological_Process_2021,DNA replication initiation (GO:0006270),15,38,0.395,8.266145365855225e-08
+HER2,GO_Biological_Process_2021,mitotic metaphase plate congression (GO:0007080),17,51,0.333,1.0541331638625508e-07
+Luminal B,MSigDB_Hallmark_2020,G2-M Checkpoint,64,200,0.32,4.3605942416657295e-51
+Luminal B,MSigDB_Hallmark_2020,E2F Targets,64,200,0.32,4.3605942416657295e-51
+Luminal B,MSigDB_Hallmark_2020,Mitotic Spindle,29,199,0.146,5.150089439308904e-13
+Luminal B,MSigDB_Hallmark_2020,mTORC1 Signaling,24,200,0.12,4.074088780150276e-09
+Luminal B,MSigDB_Hallmark_2020,Estrogen Response Late,18,200,0.09,3.7695596476231353e-05
+Luminal B,MSigDB_Hallmark_2020,Glycolysis,17,200,0.085,0.0001228983146218
+Luminal B,MSigDB_Hallmark_2020,Interferon Alpha Response,10,97,0.103,0.0010380205479852
+Luminal B,MSigDB_Hallmark_2020,Interferon Gamma Response,15,200,0.075,0.0010380205479852
+Luminal B,MSigDB_Hallmark_2020,Myc Targets V1,15,200,0.075,0.0010380205479852
+Luminal B,MSigDB_Hallmark_2020,Cholesterol Homeostasis,8,74,0.108,0.0026920969003959
+Luminal B,KEGG_2021_Human,Cell cycle,24,124,0.194,2.1652321600426226e-12
+Luminal B,KEGG_2021_Human,Oocyte meiosis,14,129,0.109,0.0006804422095914
+Luminal B,KEGG_2021_Human,Fanconi anemia pathway,9,54,0.167,0.0006804422095914
+Luminal B,KEGG_2021_Human,p53 signaling pathway,9,73,0.123,0.0060597447942208
+Luminal B,KEGG_2021_Human,DNA replication,6,36,0.167,0.0134665787111951
+Luminal B,KEGG_2021_Human,Homologous recombination,6,41,0.146,0.0232525838290889
+Luminal B,KEGG_2021_Human,Cellular senescence,12,156,0.077,0.0242452597797646
+Luminal B,KEGG_2021_Human,Progesterone-mediated oocyte maturation,9,100,0.09,0.032335538024349
+Luminal B,KEGG_2021_Human,Steroid biosynthesis,4,20,0.2,0.0400743031910966
+Luminal B,GO_Biological_Process_2021,microtubule cytoskeleton organization involved in mitosis (GO:1902850),34,128,0.266,8.434990643558413e-22
+Luminal B,GO_Biological_Process_2021,mitotic spindle organization (GO:0007052),36,157,0.229,4.1652517102111266e-21
+Luminal B,GO_Biological_Process_2021,mitotic sister chromatid segregation (GO:0000070),25,102,0.245,5.2057364158960804e-15
+Luminal B,GO_Biological_Process_2021,centromere complex assembly (GO:0034508),14,37,0.378,9.805256205766396e-11
+Luminal B,GO_Biological_Process_2021,DNA replication (GO:0006260),21,108,0.194,1.9697380071089188e-10
+Luminal B,GO_Biological_Process_2021,sister chromatid segregation (GO:0000819),13,34,0.382,4.1770838727721214e-10
+Luminal B,GO_Biological_Process_2021,mitotic nuclear division (GO:0140014),17,74,0.23,1.444398258479873e-09
+Luminal B,GO_Biological_Process_2021,DNA metabolic process (GO:0006259),31,277,0.112,1.897389023344653e-09
+Luminal B,GO_Biological_Process_2021,positive regulation of cell cycle process (GO:0090068),18,101,0.178,2.1727296122242546e-08
+Luminal B,GO_Biological_Process_2021,CENP-A containing chromatin organization (GO:0061641),11,30,0.367,2.1727296122242546e-08
