@@ -7,6 +7,7 @@ Which genes and transcriptional features distinguish the major molecular subtype
 ## Methods
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - Analyzed the GSE45827 breast cancer expression dataset containing 130 tumor samples across four molecular subtypes: Basal (n=41), HER2 (n=30), Luminal A (n=29), and Luminal B (n=30).
 - Applied a low-variance filter, retaining 28,086 of 29,873 Affymetrix probes for differential-expression analysis.
 - Used the `limma` empirical-Bayes framework with a no-intercept design (`~ 0 + subtype`) and six pairwise contrasts.
@@ -95,6 +96,8 @@ Breast cancer is transcriptionally heterogeneous, and molecular subtype captures
 
 ### 1. Dataset
 =======
+=======
+>>>>>>> main
 * Analyzed the GSE45827 breast cancer expression dataset containing 130 tumor samples across four molecular subtypes: Basal (n=41), HER2 (n=30), Luminal A (n=29), and Luminal B (n=30).
 * Applied a low-variance filter, retaining 28,086 of 29,873 Affymetrix probes for differential-expression analysis.
 * Used the limma empirical-Bayes framework to perform six pairwise subtype comparisons.
@@ -134,6 +137,9 @@ Three additional pairwise comparisons were performed to characterize the broader
 Here, "Basal" refers to the molecular subtype defined in the source dataset. It should not be treated as synonymous with clinically confirmed triple-negative breast cancer (TNBC) in the absence of corresponding clinical receptor-status information.
 
 ## 2. Dataset
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 
 The analysis uses GEO accession **GSE45827**, an Affymetrix Human Genome U133 Plus 2.0 expression dataset containing breast cancer molecular subtypes.
@@ -148,6 +154,7 @@ The tumor cohort analyzed here contains:
 | Luminal B         |      30 |
 | **Total**         | **130** |
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 The dataset also contains normal and cell-line samples in the original study; these were not included in the tumor subtype differential-expression analysis.
 
@@ -166,6 +173,8 @@ The expression values were already on an approximately log-scale, so no addition
 
 ### 3. Statistical model
 =======
+=======
+>>>>>>> main
 The dataset also contains other sample types in the original study; these were not included in the tumor subtype differential-expression analysis.
 
 ## 3. Expression preprocessing
@@ -196,6 +205,9 @@ and removed 1,787 low-variance probes.
 The expression values were already on an approximately log-scale, so no additional log transformation was applied.
 
 ## 4. Statistical model
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 
 Differential expression was performed using the Bioconductor `limma` package.
@@ -207,8 +219,11 @@ A no-intercept design matrix was used:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 with four subtype coefficients (`Luminal A`, `Luminal B`, `HER2`, `Basal`), and six pairwise contrasts:
 =======
+=======
+>>>>>>> main
 with four subtype coefficients:
 
 ```text
@@ -221,6 +236,9 @@ Basal
 Pairwise contrasts were then constructed between these coefficients.
 
 The six contrasts were:
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 
 ```text
@@ -233,12 +251,15 @@ Basal - HER2
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Positive log2 fold-change therefore indicates higher expression in the first-named subtype.
 
 ### 4. Multiple-testing correction
 
 For each contrast, limma's moderated t-statistics were calculated using empirical-Bayes variance moderation. P-values were adjusted using the Benjamini–Hochberg procedure.
 =======
+=======
+>>>>>>> main
 Positive log2 fold-change therefore indicates higher expression in the first subtype named in the contrast.
 
 ## 5. Multiple-testing correction
@@ -246,6 +267,9 @@ Positive log2 fold-change therefore indicates higher expression in the first sub
 For each contrast, limma's moderated t-statistics were calculated using empirical-Bayes variance moderation.
 
 P-values were adjusted using the Benjamini–Hochberg procedure.
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 
 Two significance criteria were used:
@@ -261,6 +285,7 @@ FDR < 0.05
 |log2FC| >= 1
 ```
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 The latter was used to identify genes showing both statistical evidence and a minimum effect size.
 
@@ -290,6 +315,9 @@ Note: Steps 1–2 require an R environment with Bioconductor (see `renv.lock`); 
 Map the subtype-specific differentially expressed genes onto biological pathways (GO, KEGG, MSigDB Hallmark) to interpret what these transcriptional programs actually do — moving from "which genes changed" to "what do these genes do".
 
 **Carry-forward caveat:** the batch/hybridization confounding identified in Stage 1 must be considered when interpreting the pathway results, especially for the Basal/HER2 vs Luminal contrasts.
+=======
+The latter was used to identify genes showing both statistical evidence and a minimum effect
+>>>>>>> main
 =======
 The latter was used to identify genes showing both statistical evidence and a minimum effect
 >>>>>>> main

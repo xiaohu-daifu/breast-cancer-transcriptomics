@@ -33,6 +33,7 @@ readme.template.md
 # Large expression datasets
 # ============================================================
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 data/GSE45827_series_matrix.txt.gz
 data/GSE45827_expression.csv
@@ -45,15 +46,24 @@ stage02/results/DE_Basal_vs_HER2_annotated.csv
 data/GSE45827_RAW.tar
 data/GSE45827_series_matrix.txt.gz
 data/GSE45827_expression.csv
+=======
+data/GSE45827_RAW.tar
+data/GSE45827_series_matrix.txt.gz
+data/GSE45827_expression.csv
+>>>>>>> main
 
 # Large generated DE tables
 stage02/results/DE_Basal_vs_Her2.csv
 stage02/results/DE_Basal_vs_Her2_annotated.csv
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 stage02/results/DE_Basal_vs_LuminalA.csv
 stage02/results/DE_Basal_vs_LuminalA_annotated.csv
 stage02/results/DE_Basal_vs_LuminalB.csv
 stage02/results/DE_Basal_vs_LuminalB_annotated.csv
+<<<<<<< HEAD
 <<<<<<< HEAD
 stage02/results/DE_HER2_vs_LuminalA.csv
 stage02/results/DE_HER2_vs_LuminalA_annotated.csv
@@ -67,12 +77,17 @@ stage03/results/gene_lists.json
 stage03/results/ora/ora_all_terms.csv
 
 =======
+=======
+>>>>>>> main
 stage02/results/DE_Her2_vs_LuminalA.csv
 stage02/results/DE_Her2_vs_LuminalA_annotated.csv
 stage02/results/DE_Her2_vs_LuminalB.csv
 stage02/results/DE_Her2_vs_LuminalB_annotated.csv
 stage02/results/DE_LuminalB_vs_LuminalA.csv
 stage02/results/DE_LuminalB_vs_LuminalA_annotated.csv
+<<<<<<< HEAD
+>>>>>>> main
+=======
 >>>>>>> main
 # ============================================================
 # R / renv
