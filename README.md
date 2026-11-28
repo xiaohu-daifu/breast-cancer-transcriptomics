@@ -51,7 +51,7 @@ Breast cancer transcriptomic datasets
                 │
                 ▼
             _Stage 4_
-    Published analysis reproduction
+Reproduce Thorsson 2018 (immune subtypes C1–C6)
                 │
                 ▼
             _Stage 5_
@@ -72,3 +72,34 @@ Breast cancer transcriptomic datasets
                 ▼
             _Stage 9_
  Immune & immunotherapy-related analysis
+
+---
+
+## Current status
+
+- **Stages 1–3 complete** (data QC, differential expression, pathway
+  enrichment) on the GSE45827 cohort — see `stage01/`, `stage02/`, `stage03/`.
+- **Stage 4 in progress** — reproducing Thorsson et al. 2018 (immune subtypes
+  C1–C6) with cross-cohort validation in METABRIC — see `stage04/`.
+
+## Preprint goal
+
+Stage 4 is being developed toward a preprint:
+
+> **"Reproduction and cross-cohort validation of the TCGA immune subtypes
+> (C1–C6) in breast cancer."**
+
+The goal is to re-derive the C1–C6 immune subtypes from raw TCGA-BRCA
+expression, quantify concordance with the published labels, cross-validate in
+METABRIC (an independent, microarray cohort), and map the immune subtypes onto
+PAM50 and prognosis.
+
+### Note on the Stage 4 paper choice
+
+The roadmap originally suggested reproducing TCGA (2012) or PAM50 (2009). We
+instead selected **Thorsson et al. 2018** (*Immunity*), which classifies tumors
+into six immune subtypes (C1–C6) from TCGA data. Candidate alternatives
+(Bagaev et al. 2021; Sammut et al. 2022) were rejected after verification:
+Bagaev is a commercial (BostonGene) product with paywalled, non-deposited data;
+Sammut's primary data is EGA-controlled. Thorsson is fully open (free full text
+and supplementary, TCGA data) and directly feeds the project's immune-focus.
