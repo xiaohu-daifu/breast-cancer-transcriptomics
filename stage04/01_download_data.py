@@ -11,6 +11,7 @@ obtained separately from the Thorsson 2018 supplementary (Europe PMC PMC5982584)
 """
 
 from pathlib import Path
+import sys
 
 import pandas as pd
 import requests
@@ -61,33 +62,59 @@ def fetch_clinical(study_id, clinical_type):
     return wide.reset_index()
 
 
-def fetch_expression(profile_id, sample_list_id):
-    """
-    Fetch the full mRNA expression matrix as a genes x samples DataFrame.
+def get_sample_ids(sample_list_id):
+    """Return the list of sample IDs for a sample list."""
+    url = f"{CBIO}/sample-lists/{sample_list_id}/sample-ids"
+    res = requests.get(url, timeout=60)
+    res.raise_for_status()
+    return res.json()
 
-    NOTE: this is a large download (~20k genes x ~1000 samples for BRCA,
-    ~2.5k samples for METABRIC). Run once; results are cached to disk.
+
+def fetch_expression(profile_id, sample_list_id, chunk_size=20):
     """
+    Fetch the mRNA expression matrix as a genes x samples DataFrame.
+
+    Chunked by sample to avoid a single multi-GB API response.
+    """
+    sample_ids = get_sample_ids(sample_list_id)
+
     url = f"{CBIO}/molecular-profiles/{profile_id}/molecular-data/fetch"
     params = {"projection": "SUMMARY"}
-    body = {
-        "sampleListId": sample_list_id,
-    }
-    res = requests.post(url, params=params, json=body, timeout=3600)
-    res.raise_for_status()
-    rows = res.json()
 
-    df = pd.DataFrame(rows)
-    matrix = df.pivot_table(
-        index="entrezGeneId",
-        columns="sampleId",
-        values="value",
-    )
-    return matrix
+    matrices = []
+
+    for i in range(0, len(sample_ids), chunk_size):
+        chunk = sample_ids[i:i + chunk_size]
+        res = requests.post(
+            url,
+            params=params,
+            json={"sampleIds": chunk},
+            timeout=600,
+        )
+        res.raise_for_status()
+        df = pd.DataFrame(res.json())
+        matrix = df.pivot_table(
+            index="entrezGeneId",
+            columns="sampleId",
+            values="value",
+        )
+        matrices.append(matrix)
+        print(
+            f"    fetched {min(i + chunk_size, len(sample_ids))}/{len(sample_ids)}"
+            f" samples; genes={matrix.shape[0]}"
+        )
+
+    return pd.concat(matrices, axis=1)
 
 
 def main():
+    # Optional cohort filter: `python 01_download_data.py tcga_brca`
+    selected = sys.argv[1] if len(sys.argv) > 1 else None
+
     for name, cfg in STUDIES.items():
+
+        if selected and name != selected:
+            continue
 
         out_dir = DATA_DIR / name
         out_dir.mkdir(exist_ok=True)

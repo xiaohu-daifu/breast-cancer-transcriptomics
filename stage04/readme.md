@@ -4,7 +4,7 @@
 
 Reproduce the TCGA pan-cancer immune-subtype classification (C1–C6) from
 Thorsson et al., *Immunity* 2018, and extend it to breast cancer with
-cross-cohort validation in METABRIC — the foundation for a preprint.
+cross-cohort validation in METABRIC : the foundation for a preprint.
 
 ## Preprint contribution
 
